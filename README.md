@@ -13,3 +13,8 @@ Java Code https://github.com/aftiyah94/Android-Development-Trackns/blob/master/C
 Project (3) Lesson 8 --> Practise Set: Making App Interactive (Court Counter).
 XML Code https://github.com/aftiyah94/Android-Development-Trackns/blob/master/CourtCounter.xml
 Java Code https://github.com/aftiyah94/Android-Development-Trackns/blob/master/CourtCounter.java
+
+##	Certification
+
+
+<img src="/Certification/Android-Development-Trackns1.jpg" height="49%" width="49%"> <img src="/Certification/Android-Development-Trackns2.jpg" height="49%" width="49%">
