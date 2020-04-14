@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahmed.courtcounter.MainActivity">
+
+    <!-- don't forget to provide your own image src -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/basketballcourtclipart"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_teamAScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="48sp"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="56dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="+3 POINTS"
+        android:background="@android:color/holo_orange_light"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold"
+        android:onClick="Plus3TeamA"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="+2 POINTS"
+        android:background="@android:color/holo_orange_light"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold"
+        android:onClick="Plus2TeamA"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="FREE THROW"
+        android:background="@android:color/holo_orange_light"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold"
+        android:onClick="FreeThrowTeamA"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team B"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_teamBScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="48sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="56dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="+3 POINTS"
+        android:background="@android:color/holo_orange_light"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="16dp"
+        android:textStyle="bold"
+        android:onClick="Plus3TeamB"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="+2 POINTS"
+        android:background="@android:color/holo_orange_light"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="290dp"
+        android:layout_marginRight="16dp"
+        android:textStyle="bold"
+        android:onClick="Plus2TeamB"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="FREE THROW"
+        android:background="@android:color/holo_orange_light"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="340dp"
+        android:layout_marginRight="16dp"
+        android:textStyle="bold"
+        android:onClick="FreeThrowTeamB"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="RESET"
+        android:background="@android:color/holo_orange_light"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:onClick="ResetScoreForBothTeams"
+        />
+
+</RelativeLayout>

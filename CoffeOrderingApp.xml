@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ahmed.myapplication.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/coffee"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/textView_quantity1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/button_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_margin="32dp"
+        android:onClick="Increment"
+        android:layout_below="@id/textView_quantity1"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:id="@+id/textView_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@id/button_plus"
+        android:layout_below="@id/textView_quantity1"
+        android:textSize="32sp"
+        android:layout_margin="40dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_quantity1"
+        android:layout_toRightOf="@id/textView_quantity"
+        android:text="-"
+        android:onClick="Decrement"
+        android:layout_margin="32dp"
+        android:textSize="32sp"/>
+
+
+    <TextView
+        android:id="@+id/textView_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_plus"
+        android:text="Total Price is: $10.00 \nThank You!"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:layout_margin="32dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="submitOrder"
+        android:text="Summit Order"
+        android:layout_below="@id/textView_price"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
